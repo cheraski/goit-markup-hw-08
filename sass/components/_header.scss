@@ -1,0 +1,104 @@
+.site-nav {list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: inline-flex;
+  }
+  
+  .site-nav__menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .cont-nav {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: inline-flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  .cont-nav__cont-item:not(:first-child) {
+    margin-left: 50px;
+  }
+  
+  .page-header {
+    border-bottom: 2px solid var(--border-cl);
+  }
+  .page-header .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .site-nav__menu-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+  
+    bottom: -2px;
+    border-radius: 2px;
+    height: 4px;
+    background-color: var(--focus-cl);
+    width: 100%;
+    opacity: 0;
+  
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .site-nav__menu-link:hover::after,
+  .site-nav__menu-link:focus::after {
+    opacity: 1;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    color: var(--main-title-cl);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--focus-cl);
+  }
+
+  
+.cont-nav .link {
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    color: var(--title-cl);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .cont-nav .link:hover,
+  .cont-nav .link:focus {
+    color: var(--focus-cl);
+  }
+  
+  .cont-nav .link:hover .cont-icon-mail {
+    fill: currentColor;
+  }
+  
+  .cont-nav .link:hover .cont-icon-tel {
+    fill: currentColor;
+  }
+  

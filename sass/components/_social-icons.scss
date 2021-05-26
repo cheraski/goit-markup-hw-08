@@ -1,0 +1,33 @@
+
+.social-icons {
+    display: inline-flex;
+  }
+  
+  .social-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--icon-cl);
+  
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-icons-link:hover,
+  .social-icons-link:focus {
+    background-color: var(--focus-cl);
+    fill: var(--button-cl);
+  }
+  
+  .social-icons__social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .social-icons__social-item {
+    padding-bottom: 30px;
+  }
+  

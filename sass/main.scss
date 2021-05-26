@@ -1,0 +1,76 @@
+
+@import "./utils/variables";
+
+/* general styles */
+
+@import "./base/common";
+@import "./base/container";
+
+/* logo */
+
+@import "./components/logo";
+
+/* site-nav */
+
+@import "./components/header";
+
+/* contacts icons */
+
+@import "./components/contacts-icons";
+
+// address
+
+@import "./components/address";
+
+/*hero section*/
+
+@import "./components/hero";
+
+/* features icons */
+
+@import "./components/features-icons";
+
+/* activity section */
+
+@import "./components/activity";
+
+/* social icons */
+
+@import "./components/social-icons";
+
+/* team section */
+
+@import "./components/team-cards";
+
+/* clients icons */
+
+@import "./components/clients-icons";
+
+/* portfolio */
+
+@import "./components/portfolio";
+
+/* footer */
+
+@import "./components/footer";
+
+
+/* footer icons */
+
+@import "./components/footer-social-icons";
+
+/* footer form */
+
+@import "./components/footer-form";
+
+
+/* modal */
+
+@import "./components/modal";
+
+/*modal-form */
+
+@import "./components/modal-form";
+
+
+

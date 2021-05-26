@@ -1,0 +1,68 @@
+
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--bg-footer-cl);
+    background-image: linear-gradient(
+        45deg,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero__hero-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    max-width: 696px;
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--logo-footer-cl);
+  }
+  .hero__btn-hero {
+    width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: none;
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--focus-cl);
+    color: var(--button-cl);
+    cursor: pointer;
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hero__btn-hero:hover,
+  .hero__btn-hero:focus {
+    background-color: var(--logo-footer-cl);
+    color: var(--focus-cl);
+  }
