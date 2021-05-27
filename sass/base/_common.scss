@@ -1,39 +1,36 @@
 .project-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  body {
-    background-color: var(--logo-footer-cl);
-    font-family: var(--title-font);
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-  
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .section:nth-child(2n) {
-    padding-top: 94;
-    padding-bottom: 0px;
+body {
+  background-color: var(--logo-footer-cl);
+  font-family: var(--title-font);
+}
 
-  }
+ul {
+  list-style: none;
+}
 
-  .section:nth-child(4n) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: var(--button-cl);
-  }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-  .link {
-    text-decoration: none;
-    font-style: normal;
-    display: block;
-    position: relative;
-  }
+.section:nth-child(2n) {
+  padding-top: 94;
+  padding-bottom: 0px;
+}
+
+.section:nth-child(4n) {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--button-cl);
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+  display: block;
+  position: relative;
+}

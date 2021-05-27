@@ -1,68 +1,66 @@
-.features{
-    margin: 0px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0px;
-  }
-  
-  
-  .features__features-svg {
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .features__features-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: var(--button-cl);
-    color: var(--icon-cl);
-    border: solid 1px var(--button-cl);
-    margin-bottom: 30px;
-  }
-  
-  .features__features-list {
-    margin-top: 0;
-  
-    font-family: var(--title-font);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  
-    color: var(--main-title-cl);
-  }
-  
-  .features__features-text{
-    margin: 0px;
-  }
-  
-  .features {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-  
-    font-family: var(--title-font);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  
-    color: var(--title-cl);
-  }
-  
-  .features__features-label {
-    align-items: center;
-    
-  }
-  
-  .features__features-label:not(:last-child) {
-    margin-right: 30px;
-  }
+.features {
+  margin: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.features__features-svg {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__features-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--button-cl);
+  color: var(--icon-cl);
+  border: solid 1px var(--button-cl);
+  margin-bottom: 30px;
+}
+
+.features__features-list {
+  margin-top: 0;
+
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-title-cl);
+}
+
+.features__features-text {
+  margin: 0px;
+}
+
+.features {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--title-cl);
+}
+
+.features__features-label {
+  align-items: center;
+}
+
+.features__features-label:not(:last-child) {
+  margin-right: 30px;
+}
