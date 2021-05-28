@@ -15,11 +15,24 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width:480px) {
+    padding-bottom: 60px;
+    padding-top: 60;
+    
+  }
 }
 
 .section:nth-child(2n) {
   padding-top: 94;
   padding-bottom: 0px;
+
+  @media screen and (max-width:480px) {
+    padding-bottom: 60px;
+    padding-top: 60;
+    
+  }
+  
 }
 
 .section:nth-child(3n){
@@ -29,12 +42,24 @@ ul {
     
   }
 
+  @media screen and (max-width:768px) {
+    display: none;
+    
+  }
 }
 
 .section:nth-child(4n) {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--button-cl);
+  background-size: auto;
+  width: 100%;
+
+  @media screen and (max-width:480px) {
+    padding-top: 60px;
+  padding-bottom: 60px;
+    
+  }
 }
 
 .link {
@@ -42,4 +67,10 @@ ul {
   font-style: normal;
   display: block;
   position: relative;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
