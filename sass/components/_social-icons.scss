@@ -1,7 +1,17 @@
 .social-icons {
+  @media screen and (max-width:480px) {
+
+    display: flex;
+   justify-content: center;
+   padding: 0;
+ }
+
+
+  @media screen and (min-width:1200px) {
+      
   display: inline-flex;
 }
-
+}
 .social-icons-link {
   display: flex;
   align-items: center;

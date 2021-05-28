@@ -1,9 +1,19 @@
 .features {
-  margin: 0px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 0px;
+  @media screen and (max-width: 480px) {
+    display: block;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+  }
 }
 
 .features__features-svg {
@@ -12,19 +22,37 @@
 }
 
 .features__features-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background-color: var(--button-cl);
-  color: var(--icon-cl);
-  border: solid 1px var(--button-cl);
-  margin-bottom: 30px;
+  @media screen and (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--button-cl);
+    color: var(--icon-cl);
+    border: solid 1px var(--button-cl);
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--button-cl);
+    color: var(--icon-cl);
+    border: solid 1px var(--button-cl);
+    margin-bottom: 30px;
+  }
 }
 
 .features__features-list {
+  @media screen and (max-width: 480px) {
+  text-align: center;
+  }
   margin-top: 0;
 
   font-family: var(--title-font);
@@ -62,5 +90,10 @@
 }
 
 .features__features-label:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (max-width: 480px) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }

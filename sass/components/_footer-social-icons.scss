@@ -1,5 +1,14 @@
 .footer-social-position {
-  display: block;
+ 
+
+  @media screen and (max-width:480px) {
+    display: block;
+    padding-top: 60px;
+  }
+ 
+
+  @media screen and (min-width:1200px) {
+    display: block;
   width: 206px;
   height: 80px;
   margin: 0px;
@@ -8,6 +17,8 @@
   padding-top: 0px;
   flex-direction: row;
   align-items: stretch;
+  }
+
 }
 
 .footer-social-icons {
