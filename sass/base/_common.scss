@@ -22,6 +22,15 @@ ul {
   padding-bottom: 0px;
 }
 
+.section:nth-child(3n){
+
+  @media screen and (max-width:480px) {
+    display: none;
+    
+  }
+
+}
+
 .section:nth-child(4n) {
   padding-top: 94px;
   padding-bottom: 94px;

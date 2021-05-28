@@ -37,6 +37,12 @@ ul {
   padding-bottom: 0px;
 }
 
+@media screen and (max-width: 480px) {
+  .section:nth-child(3n) {
+    display: none;
+  }
+}
+
 .section:nth-child(4n) {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -50,12 +56,34 @@ ul {
   position: relative;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* logo */
@@ -114,6 +142,12 @@ ul {
   display: inline-flex;
 }
 
+@media screen and (max-width: 480px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .site-nav__menu-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -125,6 +159,12 @@ ul {
   display: inline-flex;
   margin-left: auto;
   align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .cont-nav {
+    display: none;
+  }
 }
 
 .cont-nav__cont-item:not(:first-child) {
@@ -182,6 +222,32 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--focus-cl);
+}
+
+.site-nav__menu-link-active {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: var(--title-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-style: normal;
+  display: block;
+  position: relative;
+  color: var(--focus-cl);
+}
+
+.site-nav__menu-link-active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  border-radius: 2px;
+  height: 4px;
+  background-color: var(--focus-cl);
+  width: 100%;
 }
 
 .cont-nav .link {
@@ -537,6 +603,7 @@ ul {
 .team__team-item {
   width: calc((100% - 90px) / 4);
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: white;
 }
 
 .team__team-item:not(:last-child) {
