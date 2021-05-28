@@ -29,8 +29,7 @@
 }
 
 .team {
-  margin-left: auto;
-  margin-right: auto;
+
   padding: 0;
 
   @media screen and (max-width: 768px) {
@@ -74,17 +73,6 @@
     background-color: white;
     border-radius: 5px;
   }
-
-  @media screen and (max-width: 768px) {
-   
-    width: 354px;
-    height: 536px;
-    display: block;
-    flex-wrap: wrap;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    background-color: white;
-  }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
@@ -97,22 +85,68 @@
     margin-bottom: 30px;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+
  
+.team__team-item:not(:last-child) {
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
   }
 }
-.team__team-item:nth-child(4n){
 
-  @media screen and (max-width: 768px) {
-    margin-right: 30px;
-  }
-  
+// social-icons
+
+.social-icons {
+  @media screen and (max-width:480px) {
+
+    display: flex;
+   justify-content: center;
+   padding: 0;
+ }
+
+
+  @media screen and (min-width:1200px) {
+      
+  display: inline-flex;
 }
-.team__team-img {
-  @media screen and (max-width: 480px) {
-    width: 450px;
-    height: 460px;
+}
+.social-icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-cl);
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--focus-cl);
+  fill: var(--button-cl);
+}
+
+.social-icons__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons__social-item {
+
+  @media screen and (max-width:480px) {
+    padding: 0;}
+
+  @media screen and (min-width:1200px) {
+  padding-bottom: 30px;
   }
 }

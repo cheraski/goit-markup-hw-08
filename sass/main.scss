@@ -5,21 +5,11 @@
 @import "./base/common";
 @import "./base/container";
 
-/* logo */
 
-@import "./components/logo";
-
-/* site-nav */
+/* header */
 
 @import "./components/header";
 
-/* contacts icons */
-
-@import "./components/contacts-icons";
-
-// address
-
-@import "./components/address";
 
 /*hero section*/
 
@@ -32,10 +22,6 @@
 /* activity section */
 
 @import "./components/activity";
-
-/* social icons */
-
-@import "./components/social-icons";
 
 /* team section */
 
@@ -52,10 +38,6 @@
 /* footer */
 
 @import "./components/footer";
-
-/* footer icons */
-
-@import "./components/footer-social-icons";
 
 /* footer form */
 

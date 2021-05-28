@@ -1,3 +1,30 @@
+.nav__link-logo {
+  text-decoration: none;
+  font-style: normal;
+  margin-right: 93px;
+}
+
+.nav__logo {
+  color: var(--focus-cl);
+  font-family: var(--logo-font);
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.nav__logo-3 {
+  color: var(--logo-cl);
+  font-family: var(--logo-font);
+  
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
 .site-nav {
   list-style: none;
   margin: 0;
@@ -15,22 +42,46 @@
 }
 
 .cont-nav {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  display: inline-flex;
-  margin-left: auto;
-  align-items: center;
+ 
 
   @media screen and (max-width:480px) {
     display: none;
     
   }
+
+  @media screen and (max-width:768px) {
+    list-style: none;
+    margin: 0;
+    margin-left: auto;
+    padding-left: 0;
+    
+    
+  }
+
+  @media screen and (min-width:1200px) {
+    
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: inline-flex;
+    margin-left: auto;
+    align-items: center;
+  }
 }
 .cont-nav__cont-item:not(:first-child) {
-  margin-left: 50px;
+
+  @media screen and (min-width:1200px) {
+    margin-left: 50px;
+  }
+
 }
 
+.cont-nav__cont-item:not(:last-child){
+  @media screen and (max-width:768px) {
+    
+margin-bottom: 10px;
+}
+}
 .page-header {
   border-bottom: 2px solid var(--border-cl);
 }
@@ -136,5 +187,36 @@
 }
 
 .cont-nav .link:hover .cont-icon-tel {
+  fill: currentColor;
+}
+
+// contacts-icons
+
+.cont-icon-tel {
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: var(--title-cl);
+  align-items: center;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cont-icon-mail {
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: var(--title-cl);
+  align-items: baseline;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cont-icon-mail:hover,
+.cont-icon-tel:hover {
   fill: currentColor;
 }
