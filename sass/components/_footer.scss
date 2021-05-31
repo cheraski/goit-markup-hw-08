@@ -2,6 +2,10 @@
 .footer__link-logo {
   text-decoration: none;
   font-style: normal;
+
+  @media screen and (max-width:768px) {
+    margin-left: 115px;
+  }
 }
 
 .footer__logo {
@@ -33,6 +37,13 @@
   
   }
 
+  @media screen and (max-width:768px) {
+    padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-footer-cl);
+  display: flex;
+  }
+
 
   @media screen and (min-width:1200px) {
     padding-top: 60px;
@@ -47,6 +58,11 @@
 
   @media screen and (max-width:480px) {
     text-align: center;
+  }
+
+  @media screen and (max-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
   }
  
 
@@ -66,6 +82,11 @@
     padding-top: 60px;
   }
  
+  @media screen and (max-width:768px) {
+    display: block;
+    padding-top: 0px;
+    margin-left: 165px;
+  }
 
   @media screen and (min-width:1200px) {
     display: block;
@@ -129,6 +150,17 @@
   padding-top: 20px;
   padding-left: 0;
   margin: 0;
+  }
+
+  @media screen and (max-width:768px){
+    align-items: center;
+    max-width: 232px;
+    display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 0;
+  margin: 0;
+  margin-left: 76px;
   }
 
   @media screen and (min-width:1200px) {
