@@ -1,11 +1,8 @@
-
 .footer__link-logo {
   text-decoration: none;
   font-style: normal;
-
-  @media screen and (max-width:768px) {
-    margin-left: 115px;
-  }
+  margin-left: 0;
+  display: inline-block;
 }
 
 .footer__logo {
@@ -30,74 +27,95 @@
 
 
 .footer {
-  @media screen and (max-width:480px) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-footer-cl);
+
+  @media screen and (min-width:768px) {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--bg-footer-cl);
-  
-  }
-
-  @media screen and (max-width:768px) {
-    padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--bg-footer-cl);
-  display: flex;
+    display: flex;
   }
 
 
   @media screen and (min-width:1200px) {
     padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--bg-footer-cl);
-  display: flex;
+    padding-bottom: 60px;
+    background-color: var(--bg-footer-cl);
+    display: flex;
   }
- 
+
 }
 
 .footer-content {
 
-  @media screen and (max-width:480px) {
+  @media screen and (min-width:480px) {
     text-align: center;
   }
 
-  @media screen and (max-width:768px) {
+  @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
- 
+
 
   @media screen and (min-width:1200px) {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
- 
+
+}
+
+.footer-content__top {
+  width: 100%;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media (min-width: 480px) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 25%;
+    text-align: left;
+  }
 }
 
 // footer-social-icons
 
 .footer-social-position {
- 
+  margin-left: 0;
+  width: 100%;
+  text-align: center;
 
-  @media screen and (max-width:480px) {
+  @media screen and (min-width:480px) {
     display: block;
     padding-top: 60px;
   }
- 
-  @media screen and (max-width:768px) {
-    display: block;
+
+  @media screen and (min-width:768px) {
     padding-top: 0px;
-    margin-left: 165px;
+    width: 50%;
   }
 
   @media screen and (min-width:1200px) {
-    display: block;
-  width: 206px;
-  height: 80px;
-  margin: 0px;
-  margin-left: 70px;
-  padding-left: 0px;
-  padding-top: 0px;
-  flex-direction: row;
-  align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+    margin: 0px;
+    margin-left: 0;
+    padding-left: 0px;
+    padding-top: 0px;
   }
 
 }
@@ -133,45 +151,46 @@
   margin-right: 10px;
 }
 
-// adress
+// address
 
 .address-position {
-  
+
   @media screen and (min-width:1200px) {
-    width: 230px;
     margin: 0px;
+    text-align: center;
   }
 }
 
 .address {
-  @media screen and (max-width:480px){
-    display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-left: 0;
   margin: 0;
+  padding: 0;
+
+  @media screen and (min-width:480px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 0;
+    margin: 0;
   }
 
-  @media screen and (max-width:768px){
+  @media screen and (min-width:768px) {
     align-items: center;
-    max-width: 232px;
+    min-width: 232px;
     display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-left: 0;
-  margin: 0;
-  margin-left: 76px;
+    flex-direction: column;
+    padding-top: 20px;
   }
 
   @media screen and (min-width:1200px) {
     margin-right: 0px;
-  width: 231px;
-  height: 81px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -193,6 +212,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .address__ft-link:hover,
 .address__ft-link:focus {
   color: var(--focus-cl);
