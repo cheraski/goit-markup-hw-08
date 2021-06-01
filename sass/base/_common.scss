@@ -21,9 +21,9 @@ ul {
     padding-top: 60;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     padding-bottom: 60px;
-    padding-top: 60;
+    padding-top: 60px;
   }
 
   @media (min-width: 1200px) {

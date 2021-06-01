@@ -37,6 +37,18 @@
 }
 
 .features__features-img {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--button-cl);
+    color: var(--icon-cl);
+    border: solid 1px var(--button-cl);
+    margin-bottom: 30px;
+
   @media (min-width: 480px) {
     display: flex;
     align-items: center;
