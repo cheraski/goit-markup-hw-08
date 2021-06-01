@@ -77,12 +77,34 @@
 }
 
 .features__features-list {
+   text-align: center;
+   font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-title-cl);
   @media (min-width: 480px) {
     text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-title-cl);
   }
 
   @media (min-width: 768px) {
     text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-title-cl);
   }
 
   @media (min-width: 1200px) {
