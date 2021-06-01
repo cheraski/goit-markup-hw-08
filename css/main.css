@@ -207,15 +207,30 @@ img {
 }
 
 .site-nav {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  display: inline-flex;
+  display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media (min-width: 480px) {
   .site-nav {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-nav {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-nav {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: inline-flex;
   }
 }
 
@@ -223,18 +238,23 @@ img {
   margin-right: 40px;
 }
 
-@media screen and (max-width: 480px) {
+.cont-nav {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
   .cont-nav {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .cont-nav {
     list-style: none;
     margin: 0;
     margin-left: auto;
     padding-left: 0;
+    display: block;
   }
 }
 
@@ -255,9 +275,15 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .cont-nav__cont-item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cont-nav__cont-item:not(:last-child) {
+    margin: 0;
   }
 }
 
@@ -393,7 +419,20 @@ img {
 }
 
 /*hero section*/
-@media screen and (max-width: 480px) {
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--bg-footer-cl);
+  background-image: linear-gradient(45deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 480px) {
   .hero {
     text-align: center;
     padding-top: 200px;
@@ -951,6 +990,14 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-cl);
+}
+
+.clients-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
 
 @media (min-width: 480px) {
