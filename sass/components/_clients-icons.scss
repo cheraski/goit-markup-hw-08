@@ -14,23 +14,22 @@
 }
 
 .clients-icons {
+  @media (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
 
-  @media screen and (max-width: 768px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
   }
 
-  @media screen and (max-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-  }
-
-  
-  @media screen and (min-width: 1200px) {
+  @media (min-width: 1200px) {
     margin: 0px;
     display: inline-flex;
     align-items: center;
@@ -40,7 +39,24 @@
 }
 
 .clients-icons__clients-link {
-  @media screen and (max-width: 480px) {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 92px;
+  border-radius: 4px;
+  color: var(--icon-cl);
+  border: solid 1px var(--icon-cl);
+  fill: var(--icon-cl);
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 480px) {
     display: flex;
 
     align-items: center;
@@ -57,7 +73,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  @media screen and (max-width: 768px) {
+  @media (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +89,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,44 +107,40 @@
 }
 
 .clients-icons__clients-item {
-  @media screen and (max-width: 480px) {
-    width: 100%/2;
-    margin-right: 30px;
+  width: 100%/2;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 480px) {
+
+  width: 100%/2;
+    
+  margin: 0;
+  padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%/3;
+    margin: 0;
     padding: 0;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    width: 100%/3;
-    margin-right: 30px;
-  }
-}
-.clients-icons__clients-item:nth-child(2n) {
-  @media screen and (max-width: 480px) {
-    margin-right: -30px;
-  }
-}
 .clients-icons__clients-item:nth-child(-n + 3) {
-  @media screen and (max-width: 768px) {
-    margin-bottom: 30px;
-  }
-}
-
-.clients-icons__clients-item:nth-child(3n) {
-  @media screen and (max-width: 480px) {
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-right: -30px;
-  }
-}
-
-.clients-icons__clients-item:not(:last-child) {
-  @media screen and (max-width: 480px) {
+  padding-bottom: 30px;
+  @media (min-width: 480px) {
     padding-bottom: 30px;
   }
+  
+}
 
-  @media screen and (min-width: 1200px) {
+
+.clients-icons__clients-item:not(:last-child) {
+  
+
+  @media (min-width: 1200px) {
     margin-right: 30px;
+    padding: 0;
   }
 }
 .clients-icons__clients-svg {
