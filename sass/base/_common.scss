@@ -1,7 +1,4 @@
-.project-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 
 body {
   background-color: var(--logo-footer-cl);
@@ -18,7 +15,7 @@ ul {
 
   @media (min-width: 480px) {
     padding-bottom: 60px;
-    padding-top: 60;
+    padding-top: 60px;
   }
 
   @media (min-width: 768px) {
@@ -54,34 +51,32 @@ ul {
 .section:nth-child(3n) {
   display: none;
 
-  @media screen and (min-width: 480px) {
+  @media (min-width: 480px) {
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media (min-width: 1200px) {
     display: block;
   }
 }
+
 
 .section:nth-child(4n) {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media (max-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @media (max-width: 768px) {
+  @media (min-width: 480px) {
     background-color: var(--button-cl);
     background-size: auto;
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  
 
   @media (min-width: 1200px) {
     padding-top: 94px;
