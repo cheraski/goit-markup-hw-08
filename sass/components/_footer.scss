@@ -25,50 +25,44 @@
   letter-spacing: 0.03em;
 }
 
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-footer-cl);
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--bg-footer-cl);
     display: flex;
   }
 
-
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--bg-footer-cl);
     display: flex;
   }
-
 }
 
 .footer-content {
-
-  @media screen and (min-width:480px) {
+  @media screen and (min-width: 480px) {
     text-align: center;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-
 }
 
 .footer-content__top {
@@ -97,17 +91,17 @@
   width: 100%;
   text-align: center;
 
-  @media screen and (min-width:480px) {
+  @media screen and (min-width: 480px) {
     display: block;
     padding-top: 60px;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 0px;
     width: 50%;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -117,7 +111,6 @@
     padding-left: 0px;
     padding-top: 0px;
   }
-
 }
 
 .footer-social-icons {
@@ -154,8 +147,7 @@
 // address
 
 .address-position {
-
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin: 0px;
     text-align: center;
   }
@@ -165,7 +157,7 @@
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width:480px) {
+  @media screen and (min-width: 480px) {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
@@ -173,7 +165,7 @@
     margin: 0;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     align-items: center;
     min-width: 232px;
     display: flex;
@@ -181,7 +173,7 @@
     padding-top: 20px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 0px;
     width: 100%;
     display: flex;

@@ -11,7 +11,6 @@
   background-color: var(--button-cl);
   color: var(--main-title-cl);
   cursor: pointer;
-  margin-right: 8px;
 
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
@@ -26,13 +25,48 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-list {
+  padding-top: 60px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 50px;
+  gap: 8px;
+
+  @media (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    gap: 8px;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    gap: 8px;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
 }
 
 /* projects */
@@ -42,21 +76,80 @@
   flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
+  gap: 30px;
+
+  @media (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    gap: 30px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    gap: 30px;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    gap: 30px;
+  }
 }
 
 .project-box__project-item {
   position: relative;
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 450px;
 
+  margin: 0;
   overflow: hidden;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
+  @media (min-width: 480px) {
+    position: relative;
+    width: 450px;
+    margin: 0;
+
+    overflow: hidden;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media (min-width: 768px) {
+    position: relative;
+    width: 354px;
+    margin: 0;
+
+    overflow: hidden;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media (min-width: 1200px) {
+    position: relative;
+    width: 370px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+
+    overflow: hidden;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 .project-box__project-item .project-box__project-img {
   display: block;
 }
@@ -64,13 +157,6 @@
 .project-box__project-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-box__project-item:nth-child(3n) {
-  margin-right: 0px;
-}
-.project-box__project-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
 }
 
 .project-box__project-card {
@@ -85,8 +171,8 @@
   left: 0px;
   margin: 0;
   padding: 0;
-  width: 370px;
-  height: 294px;
+  width: 450px;
+
   background-color: rgba(33, 150, 243, 0.9);
 
   transition-property: transform, opacity;
@@ -94,6 +180,58 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   transform: translateY(140%);
+
+  @media (min-width: 480px) {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 450px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media (min-width: 768px) {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 354px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: translateY(140%);
+  }
+
+  @media (min-width: 1200px) {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 370px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: translateY(140%);
+  }
 }
 
 .project-box__overlay-item {

@@ -7,9 +7,10 @@
   flex-direction: column;
   text-align: center;
 
-  @media screen and (min-width:480px) {}
+  @media screen and (min-width: 480px) {
+  }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +20,7 @@
     margin-right: auto;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 0px;
     margin-left: 0;
     width: 50%;
@@ -31,12 +32,11 @@
   max-width: 480px;
   width: 100%;
 
-  @media screen and (min-width:480px) {
+  @media screen and (min-width: 480px) {
     margin: 0;
-
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 0px;
     max-width: 100%;
   }
@@ -53,7 +53,7 @@
   border-radius: 4px;
   background-color: inherit;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     width: 450px;
     height: 50px;
     color: rgb(243, 243, 243);
@@ -64,7 +64,7 @@
     background-color: inherit;
   }
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     padding: 15px 16px;
     margin-right: 12px;
     width: 358px;
@@ -76,17 +76,15 @@
     border-radius: 4px;
     background-color: inherit;
   }
-
 }
 
 .footer-form__form-position {
   margin: 0;
   width: 100%;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
-
   }
 }
 
@@ -115,8 +113,7 @@
   letter-spacing: 0.06em;
   background-color: var(--focus-cl);
 
-
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     position: relative;
     display: inline-block;
     width: 200px;
@@ -136,11 +133,9 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     background-color: var(--focus-cl);
-
   }
 
-  @media (min-width:1200px) {
-
+  @media (min-width: 1200px) {
     display: inline-block;
     width: 200px;
     height: 50px;
@@ -159,7 +154,6 @@
     letter-spacing: 0.06em;
     background-color: var(--focus-cl);
     margin-top: 0;
-
   }
 }
 
@@ -168,14 +162,13 @@
   top: 13px;
   right: 28px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     top: 13px;
     right: 28px;
-
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     position: absolute;
     top: 13px;
     right: 28px;
@@ -193,8 +186,7 @@
 
   color: var(--logo-footer-cl);
 
-
-  @media screen and (min-width:480px) {
+  @media screen and (min-width: 480px) {
     text-align: center;
     margin: 0;
     padding: 0;
