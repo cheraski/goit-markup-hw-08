@@ -18,57 +18,55 @@
 }
 
 .modal {
-
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    min-height: 609px;
-    min-width: 100%;
-  
-    background-color: white;
-    border-radius: 3%; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  @media (min-width:480px) {
+  min-height: 609px;
+  min-width: 100%;
+
+  background-color: white;
+  border-radius: 3%;
+
+  @media (min-width: 480px) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  
-    min-height: 609px;
-    min-width: 450px;
-  
-    background-color: white;
-    border-radius: 3%; 
-  }
 
-  @media (min-width:768px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
     min-height: 609px;
     min-width: 450px;
-  
-    background-color: white;
-    border-radius: 3%; 
-  }
 
-  @media (min-width:1200px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    min-height: 581px;
-    min-width: 528px;
-  
     background-color: white;
     border-radius: 3%;
   }
- 
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-height: 609px;
+    min-width: 450px;
+
+    background-color: white;
+    border-radius: 3%;
+  }
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-height: 581px;
+    min-width: 528px;
+
+    background-color: white;
+    border-radius: 3%;
+  }
 }
 
 .modal__close-btn {
