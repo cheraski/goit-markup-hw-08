@@ -236,13 +236,19 @@
 
 .project-box__overlay-item {
   margin: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
+  
 
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
 
   color: var(--button-cl);
+
+  @media (min-width: 480px) {
+    padding: 63px 24px;
+    
+  }
 }
 
 .project-box__project-item:hover .project-box__overlay {

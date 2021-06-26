@@ -113,9 +113,13 @@
   }
 }
 .page-header .container {
+  @media (max-width:1199px) {
+    
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 }
 
 .site-nav__menu-link::after {
