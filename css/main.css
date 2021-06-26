@@ -856,7 +856,7 @@ img {
   color: var(--logo-footer-cl);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .hero__hero-title {
     font-size: 44px;
   }
