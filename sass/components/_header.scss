@@ -183,6 +183,7 @@
   align-items: flex-start;
   justify-content: space-between;
   z-index: 100;
+
   &.is-open {
     display: flex;
   }
@@ -206,6 +207,7 @@
     padding: 0;
     height: 80px;
     display: inline-flex;
+    width: calc(100% - 243px);
   }
 }
 
