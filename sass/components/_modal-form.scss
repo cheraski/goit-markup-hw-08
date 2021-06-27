@@ -102,9 +102,13 @@
 .modal-form__agreement-conditions-text {
   color: rgba(117, 117, 117, 1);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .modal-form__agreement-conditions-link a {

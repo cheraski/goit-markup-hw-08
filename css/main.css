@@ -69,7 +69,7 @@ ul {
 
 @media (min-width: 1200px) {
   .section:nth-child(2n) {
-    padding-top: 94;
+    padding-top: 94px;
     padding-bottom: 0px;
   }
 }
@@ -785,8 +785,8 @@ img {
 /*hero section*/
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--bg-footer-cl);
   background-size: cover;
 }
@@ -829,8 +829,8 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -858,6 +858,12 @@ img {
 }
 
 @media (min-width: 768px) {
+  .hero__hero-title {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1200px) {
   .hero__hero-title {
     font-size: 44px;
   }
@@ -1165,9 +1171,25 @@ img {
 
 @media (min-width: 480px) {
   .team-title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
     margin-bottom: 50px;
     margin-top: 0;
-    font-size: 36px;
   }
 }
 
@@ -1371,9 +1393,25 @@ img {
 
 @media (min-width: 480px) {
   .clients-title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
     margin-bottom: 50px;
     margin-top: 0;
-    font-size: 36px;
   }
 }
 
@@ -1700,7 +1738,7 @@ img {
   left: 0px;
   margin: 0;
   padding: 0;
-  width: 450px;
+  width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transition-property: transform, opacity;
@@ -2485,9 +2523,15 @@ img {
 .modal-form__agreement-conditions-text {
   color: #757575;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: 1200px) {
+  .modal-form__agreement-conditions-text {
+    font-size: 14px;
+  }
 }
 
 .modal-form__agreement-conditions-link a {

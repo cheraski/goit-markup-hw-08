@@ -171,7 +171,7 @@
   left: 0px;
   margin: 0;
   padding: 0;
-  width: 450px;
+  width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
@@ -254,6 +254,7 @@
 .project-box__project-item:hover .project-box__overlay {
   opacity: 1;
   transform: translateY(0%);
+ 
 }
 .project-box__project-title:nth-child(2) {
   font-size: 16px;
